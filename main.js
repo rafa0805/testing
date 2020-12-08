@@ -1,0 +1,1 @@
+// Konichiwa form JS
