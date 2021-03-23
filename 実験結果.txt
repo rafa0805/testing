@@ -1,0 +1,59 @@
+実験 1-A
+普通にプルできる
+
+実験 2-A
+From https://github.com/rafa0805/testing
+ * branch            master     -> FETCH_HEAD
+error: Your local changes to the following files would be overwritten by merge:
+        .gitignore
+Please commit your changes or stash them before you merge.
+Aborting
+Updating e2556b6..24520fd
+
+実験 2-A
+# git push origin master
+To https://github.com/rafa0805/testing.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/rafa0805/testing.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+# git pull origin master
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (1/1), done.
+remote: Total 3 (delta 1), reused 3 (delta 1), pack-reused 0
+Unpacking objects: 100% (3/3), 279 bytes | 2.00 KiB/s, done.
+From https://github.com/rafa0805/testing
+ * branch            master     -> FETCH_HEAD
+   94f2557..8f52319  master     -> origin/master
+Auto-merging test4.txt
+CONFLICT (content): Merge conflict in test4.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+実験 2-B
+# git push origin master
+To https://github.com/rafa0805/testing.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/rafa0805/testing.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+# git pull origin master
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (1/1), done.
+remote: Total 3 (delta 1), reused 3 (delta 1), pack-reused 0
+Unpacking objects: 100% (3/3), 293 bytes | 2.00 KiB/s, done.
+From https://github.com/rafa0805/testing
+ * branch            master     -> FETCH_HEAD
+   cbed1c2..779c0eb  master     -> origin/master
+Merge made by the 'recursive' strategy.
+ test4.txt | 2 ++
+ 1 file changed, 2 insertions(+)
