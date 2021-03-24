@@ -1,2 +1,3 @@
 <!-- warikomi -->
 testingでのconfig
+もっとconfig
